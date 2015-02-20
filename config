@@ -36,7 +36,7 @@ client.urgent           #f9f9f9 #d64937 #2d2d2d #d64937
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command i3status -c ~/.i3/i3status.conf
 	      font pango:Droid Sans Mono, Icons 8
         colors {
            background #333333
@@ -47,7 +47,7 @@ bar {
         }
 }
 
-for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_togglndow [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
+#for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_togglndow [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
 for_window [class="Mplayer"] floating enable; border none;
 
 
@@ -55,11 +55,12 @@ for_window [class="Mplayer"] floating enable; border none;
 
 exec_always --no-startup-id dropboxd
 exec_always --no-startup-id ~/.fehbg
-exec        --no-startup-id compton --config ~/.i3/compton.conf
+exec_always --no-startup-id xmodmap ~/.i3/xmodmap
+#exec        --no-startup-id compton --config ~/.i3/compton.conf
 exec        --no-startup-id urxvtd -q -f -o
 #exec        xfce4-notifyd
 exec         --no-startup-id dunst -config ~/.i3/dunst.conf
-exec        ~/.start-i3-apps.sh
+#exec        ~/.start-i3-apps.sh
 exec        --no-startup-id xset dpms 600
 exec	      --no-startup-id i3-msg 'workspace 2: web; exec /usr/bin/firefox;workspace 3: emacs; exec /usr/bin/emacs;workspace 1: home'
 
@@ -78,7 +79,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'Droid Sans Mono-12' -h 30 -nb '#dedede' -nf '#333333' -sb '#d64937' -sf '#f9f9f9'
+bindsym $mod+d exec dmenu_run -fn 'Droid Sans Mono-10' -h 20 -nb '#dedede' -nf '#333333' -sb '#d64937' -sf '#f9f9f9'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -193,12 +194,12 @@ bindsym $mod+r mode "resize"
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
-    bindsym e exec --no-startup-id i3exit logout, mode "default"
-    bindsym s exec --no-startup-id i3exit suspend, mode "default"
-    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+    bindsym l exec --no-startup-id ~/.i3/i3exit lock, mode "default"
+    bindsym e exec --no-startup-id ~/.i3/i3exit logout, mode "default"
+    bindsym s exec --no-startup-id ~/.i3i3exit suspend, mode "default"
+    bindsym h exec --no-startup-id ~/.i3/i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id ~/.i3/i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id ~/.i3/i3exit shutdown, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"

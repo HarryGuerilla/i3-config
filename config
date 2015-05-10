@@ -53,7 +53,7 @@ for_window [class="Mplayer"] floating enable; border none;
 
 # -- Startup Applications -----------------------------------------------------------
 
-exec_always --no-startup-id dropboxd
+exec_always --no-startup-id dropbox
 exec_always --no-startup-id ~/.fehbg
 exec        --no-startup-id compton --config ~/.i3/compton.conf
 exec        --no-startup-id urxvtd -q -f -o

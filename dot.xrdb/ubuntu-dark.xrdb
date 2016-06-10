@@ -1,0 +1,58 @@
+#define COLOR_BG                  #262729
+#define COLOR_FG                  light grey
+
+#define COLOR_TERM_BLACK          #202020
+#define COLOR_TERM_DARK_RED       #BF3F34
+#define COLOR_TERM_DARK_GREEN     #707D22
+#define COLOR_TERM_DARK_YELLOW    #BF7A29
+#define COLOR_TERM_DARK_BLUE	  #627A92
+#define COLOR_TERM_DARK_MAGENTA   #75507B
+#define COLOR_TERM_DARK_CYAN      #757978
+#define COLOR_TERM_LIGHT_GRAY     #B2A191
+
+#define COLOR_TERM_DARK_GRAY      #404040
+#define COLOR_TERM_LIGHT_RED      #FF6C5F
+#define COLOR_TERM_LIGHT_GREEN    #B8CA4B
+#define COLOR_TERM_LIGHT_YELLOW   #C7A551
+#define COLOR_TERM_LIGHT_BLUE     #95B9DE
+#define COLOR_TERM_LIGHT_MAGENTA  #AD7FA8
+#define COLOR_TERM_LIGHT_CYAN     #9FA590
+#define COLOR_TERM_WHITE          #E8D0C3
+
+
+*background: COLOR_BG
+*foreground: COLOR_FG
+
+! black
+*color0:  COLOR_TERM_BLACK
+*color8:  COLOR_TERM_DARK_GRAY
+
+! red
+*color1:  COLOR_TERM_DARK_RED
+*color9:  COLOR_TERM_LIGHT_RED
+
+! green
+*color2:  COLOR_TERM_DARK_GREEN
+*color10: COLOR_TERM_LIGHT_GREEN
+
+! yellow
+*color3:  COLOR_TERM_DARK_YELLOW
+*color11: COLOR_TERM_LIGHT_YELLOW
+
+! blue
+*color4:  COLOR_TERM_DARK_BLUE
+*color12: COLOR_TERM_LIGHT_BLUE
+
+! magenta
+*color5:  COLOR_TERM_DARK_MAGENTA
+*color13: COLOR_TERM_LIGHT_MAGENTA
+
+! orange (default cyan)
+*color6:  COLOR_TERM_DARK_CYAN
+*color14: COLOR_TERM_LIGHT_CYAN
+
+! white
+*color7:  COLOR_TERM_LIGHT_GRAY
+*color15: COLOR_TERM_WHITE
+
+

@@ -1,0 +1,73 @@
+#include "/home/tony/.i3/dot.xrdb/ubuntu-dark.xrdb"
+
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintfull
+!Xft.hintstyle: hintslight
+
+!-------------------------------------------------------------------------------
+! URxvt settings
+! More info at:
+! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
+!-------------------------------------------------------------------------------
+
+URxvt.depth: 32
+URxvt.geometry: 90x30
+URxvt.transparent: false
+URxvt.fading: 0
+URxvt.loginShell: true
+URxvt.internalBorder: 3
+URxvt.lineSpace: 0
+URxvt*buffered:false
+
+! Fonts
+URxvt.allow_bold: true
+URxvt*font: xft:Droid Sans Mono:size=12,style=regular, xft:Monospace:size=13:antialias=true:hinting=true
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48,63:48,61:48,44:48,38:48,59:48
+
+! Cursor
+URxvt.cursorBlink: true
+!URxvt.cursorColor: #657b83
+URxvt.cursorColor: #e2baf1
+URxvt.cursorUnderline: false
+
+! Pointer
+URxvt.pointerBlank: false
+
+! Scrollbar
+URxvt.scrollBar: off
+
+! Colors
+URxvt*background: COLOR_BG
+URxvt*foreground: COLOR_FG
+URxvt*cursorColor: COLOR_TERM_DARK_MAGENTA
+URxvt*colorUL: #4682B4
+URxvt*underlineColor: COLOR_TERM_DARK_RED
+URxvt*color0: COLOR_TERM_BLACK
+URxvt*color1: COLOR_TERM_DARK_RED
+URxvt*color2: COLOR_TERM_DARK_GREEN
+URxvt*color3: COLOR_TERM_DARK_YELLOW
+URxvt*color4: COLOR_TERM_DARK_BLUE
+URxvt*color5: COLOR_TERM_DARK_MAGENTA
+URxvt*color6: COLOR_TERM_DARK_CYAN
+URxvt*color7: COLOR_TERM_LIGHT_GRAY
+URxvt*color8: COLOR_TERM_DARK_GRAY
+URxvt*color9: COLOR_TERM_LIGHT_RED
+URxvt*color10: COLOR_TERM_LIGHT_GREEN
+URxvt*color11: COLOR_TERM_LIGHT_YELLOW
+URxvt*color12: COLOR_TERM_LIGHT_BLUE
+URxvt*color13: COLOR_TERM_LIGHT_MAGENTA
+URxvt*color14: COLOR_TERM_LIGHT_CYAN
+URxvt*color15: COLOR_TERM_WHITE
+
+! Other
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: /usr/bin/firefox
+URxvt.matcher.button: 1
+URxvt.saveLines: 65535

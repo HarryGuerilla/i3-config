@@ -66,7 +66,7 @@ exec        --no-startup-id urxvtd -q -f -o
 #exec         --no-startup-id dunst -config ~/.i3/dunst.conf
 #exec        ~/.start-i3-apps.sh
 exec        --no-startup-id xset dpms 600
-exec        --no-startup-id i3-msg 'workspace 2: web; exec /usr/bin/firefox;workspace 3: emacs; exec /usr/bin/emacs;workspace 1: home'
+#exec        --no-startup-id i3-msg 'workspace 2: web; exec /usr/bin/firefox;workspace 3: emacs; exec /usr/bin/emacs;workspace 1: home'
 
 # -- Keybindings --------------------------------------------------------------------
 set $mod Mod4

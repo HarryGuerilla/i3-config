@@ -14,7 +14,7 @@ case "$1" in
         dm-tool lock && systemctl suspend
         ;;
     hibernate)
-        lock && systemctl hibernate
+        dm-tool lock && systemctl hibernate
         ;;
     reboot)
         systemctl reboot

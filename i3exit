@@ -5,13 +5,13 @@ lock() {
 
 case "$1" in
     lock)
-        lock
+        dm-tool lock
         ;;
     logout)
         i3-msg exit
         ;;
     suspend)
-        lock && systemctl suspend
+        dm-tool lock && systemctl suspend
         ;;
     hibernate)
         lock && systemctl hibernate

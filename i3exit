@@ -1,20 +1,20 @@
 #!/bin/sh
 lock() {
-    i3lock -i /home/tony/Documents/Desktops/hex.png -c 111111 -d -u
+    i3lock -i /home/tony/.i3/wallpaper.png -c 111111 -d
 }
 
 case "$1" in
     lock)
-        dm-tool lock
+        lock
         ;;
     logout)
         i3-msg exit
         ;;
     suspend)
-        dm-tool lock && systemctl suspend
+        lock && systemctl suspend -i
         ;;
     hibernate)
-        dm-tool lock && systemctl hibernate
+        lock && systemctl hibernate
         ;;
     reboot)
         systemctl reboot

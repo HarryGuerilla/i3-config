@@ -30,6 +30,7 @@ URxvt*buffered:false
 URxvt.allow_bold: true
 URxvt*font: xft:Droid Sans Mono:size=12,style=regular, xft:Monospace:size=13:antialias=true:hinting=true
 xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48,63:48,61:48,44:48,38:48,59:48
+Emacs.font: xft:Droid Sans Mono:size=12,style=regular
 
 ! Cursor
 URxvt.cursorBlink: true
